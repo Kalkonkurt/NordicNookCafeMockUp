@@ -4,6 +4,8 @@
 
 body {
     background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
 }
 @font-face {
     font-family: Inter;
@@ -11,18 +13,21 @@ body {
 }
 
 .navbar {
-    border: 1px solid rgb(253, 0, 0);
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    justify-content: space-between;
+    background-color: #e6e2de;
+    padding: 0.8rem;
+    box-sizing: border-box;
 }
 
 .navbar-item {
     font-family: Inter, sans-serif;
     text-decoration: none;
+    padding: 0.5rem;
 }
 
 #icon {
-    justify-self: flex-start;
+    margin-right: auto;
+    padding: 0.5rem;
 }
