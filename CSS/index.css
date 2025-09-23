@@ -2,7 +2,7 @@
     --background-color: #f7f3ee;
     --banner-color: #e6e2de;
     --hover-background: #dceaf7;
-    --hover-font: #2b6fa6;
+    --hover-color: #2b6fa6;
     --foreground: #222222;
     --input: #ffffff;
     --secondary: #f0ece9;
@@ -43,16 +43,6 @@ body {
     background-color: var(--background-color);
     padding: 0;
     margin: 0;
-}
-
-h1 {
-    font-style: normal;
-    font-weight: normal;
-}
-
-a {
-    text-decoration: none;
-    color: #222222;
 }
 
 #main-logo {
@@ -101,7 +91,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-around;
     gap: 0.5rem;
 }
 .quick-actions a {
@@ -117,7 +106,7 @@ a {
 .quick-actions a > img {
     width: 1.125rem;
     height: 1.125rem;
-    margin: 0.6875rem;
+    margin: 0.6875rem 0 0.6875rem 0.6875rem;
 }
 
 /* Hero Section */
@@ -126,7 +115,7 @@ a {
     border-radius: var(--large-roundness);
     overflow: hidden;
     gap: 1rem;
-    margin-top: ;
+    margin: 1rem;
 }
 .hero-image {
     display: block;
@@ -136,11 +125,28 @@ a {
     background-repeat: no-repeat;
     object-fit: cover;
 }
+h1 {
+    color: var(--card-foreground);
+    font-style: normal;
+    font-weight: normal;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.brand-text {
+    font-family: 'Inter', 'sans serif';
+    color: var(--muted-foreground);
+    font-style: normal;
+    font-size: 0.875rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+a {
+    text-decoration: none;
+    color: #222222;
+}
 /* Custom Styles */
 .border-bottom-shadow {
     border-bottom: rgba(0, 0, 0, 0.05) solid 0.125rem;
 }
 .clickable:hover {
     background-color: var(--hover-background);
-    color: var(--hover-font);
+    color: var(--hover-color);
 }
