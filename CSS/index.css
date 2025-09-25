@@ -49,6 +49,25 @@ main {
     margin: 1rem;
     /* max-width: 80%; */
 }
+h1 {
+    color: var(--card-foreground);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8125rem;
+    margin: 1rem;
+}
+h3 {
+    color: var(--foreground);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+p {
+    color: var(--muted-foreground);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+}
 #main-logo {
     display: flex;
     margin-right: auto;
@@ -93,12 +112,6 @@ main {
         display: none;
     }
 }
-p {
-    color: var(--muted-foreground);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-}
 /* Quick-Actions */
 
 .quick-actions {
@@ -139,13 +152,6 @@ p {
     background-repeat: no-repeat;
     object-fit: cover;
 }
-h1 {
-    color: var(--card-foreground);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.8125rem;
-    margin: 1rem;
-}
 .brand-text {
     margin: 0 1rem 1rem 1rem;
 }
@@ -180,7 +186,7 @@ a {
 }
 /*Brand Deescriptions*/
 article {
-    padding: 0.8125rem 0.8125rem 0 0.8125rem;
+    padding: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
     margin: 1rem 1rem 0.75 1rem;
 }
 .article-card {
@@ -197,7 +203,6 @@ article {
     font-size: 1.1875rem;
     margin-bottom: 0.5rem;
 }
-
 /*Menu*/
 h2 {
     color: var(--foreground);
@@ -205,6 +210,9 @@ h2 {
     font-weight: normal;
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem 0;
+}
+.menu-section {
+   
 }
 
 /* Custom Styles */
