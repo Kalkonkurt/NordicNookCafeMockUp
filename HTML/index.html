@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta content="initial-scale=1, width=device-width" name="viewport" />
+    <meta name="description"
+        content="Nordic Nook Café - A cozy Scandinavian café in Stockholm offering ethically sourced coffee, tea, and pastries in a warm, sustainable environment." />
     <title>Nordic Nook</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../CSS/index.css" />
@@ -16,11 +18,11 @@
             <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo" width="50em" />
             <span>Nordic Nook Café</span>
         </a>
-        <a class="navbar-item" href="index.html">Home</a>
-        <a class="navbar-item" href="">Menu</a>
-        <a class="navbar-item" href="">Locations & Hours</a>
-        <a class="navbar-item" href="">About & Sustainability</a>
-        <a class="navbar-item" href="">Events</a>
+        <a class="navbar-item clickable" href="index.html">Home</a>
+        <a class="navbar-item clickable" href="">Menu</a>
+        <a class="navbar-item clickable" href="">Locations & Hours</a>
+        <a class="navbar-item clickable" href="">About & Sustainability</a>
+        <a class="navbar-item clickable" href="">Events</a>
     </nav>
     <!-- Hamburgerbar för mobil från bootstrap-->
     <nav class="navbar sticky-top border-bottom-shadow">
@@ -74,11 +76,35 @@
             <img class="hero-image" src="../Resources/Hero_Image.svg" alt="Scandinavian Café in warm wood">
             <h1>Sustainable Scandinavian Comfort</h1>
             <p class="brand-text">Stockholm's cozy corner for ethically sourced coffee, tea, and pastries.</p>
+            <nav class="hero-buttons">
+                <a class="hero-button clickable-darker invert-image-color" href=""><img
+                        src="../Resources/Icon_ToGoCup.svg" alt="To Go Cup">View Menu</a>
+                <a class="hero-button clickable-darker invert-image-color" href="">
+                    <img src="../Resources/Icon_Calendar.svg" alt="Calendar">Events</a>
+            </nav>
+            <!--Brand Description-->
+            <div class="brand-description card-custom">
+                <article class="article-card">
+                    <h4>Ethical Sourcing</h4>
+                    <p>Direct-trade beans, organic teas, and seasonal produce.</p>
+                </article>
+                <article class="article-card">
+                    <h4>Nordic Minimalism</h4>
+                    <p>Warm, clean design that lets the flavor shine.</p>
+                </article>
+                <article class="article-card">
+                    <h4>Community Space</h4>
+                    <p>Work, meet, and unwind with reliable Wi-Fi.</p>
+                </article>
+            </div>
+
         </section>
     </main>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<footer></footer>
+<footer>
+
+</footer>
 
 </html>
