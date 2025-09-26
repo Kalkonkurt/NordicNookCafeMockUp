@@ -49,8 +49,23 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 main {
-    margin: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
     /* max-width: 80%; */
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--navbar-background);
+    color: var(--foreground);
+    padding: 0.5rem;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+.skip-link:focus {
+    top: 0;
 }
 
 h1,
@@ -219,13 +234,13 @@ a {
 /*Brand Deescriptions*/
 article {
     padding: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
-    margin: 1rem;
 }
 .article-card {
     background-color: var(--card);
     border-radius: var(--medium-roundness);
     border: 0.16rem solid var(--banner-color);
     box-sizing: border-box;
+    margin: 1rem;
 }
 /*Menu*/
 .menu-section article > h4 {
@@ -238,7 +253,13 @@ article {
     align-items: center;
     justify-content: space-between;
 }
-
+footer {
+    background-color: var(--navbar-background);
+    padding: 1rem 0;
+}
+.footer-section {
+    margin-left: 1rem;
+}
 /* Custom Styles */
 .card-custom {
     background-color: var(--card);
