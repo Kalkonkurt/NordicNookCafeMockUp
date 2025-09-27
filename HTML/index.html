@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta content="initial-scale=1, width=device-width" name="viewport" />
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
     <meta name="description"
-        content="Nordic Nook Café - A cozy Scandinavian café in Stockholm offering ethically sourced coffee, tea, and pastries in a warm, sustainable environment." />
+        content="Nordic Nook Café - A cozy Scandinavian café in Stockholm offering ethically sourced coffee, tea, and pastries in a warm, sustainable environment.">
     <title>Nordic Nook</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <!--Navbar för desktop-->
     <nav class="navbar-large border-bottom-shadow">
         <a id="main-logo" class="navbar-item" href="index.html">
-            <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo" />
+            <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
             <span>Nordic Nook Café</span>
         </a>
         <a class="navbar-item clickable" href="../HTML/index.html">Home</a>
@@ -28,8 +28,7 @@
     <!-- Hamburgerbar för mobil från bootstrap-->
     <nav class="navbar sticky-top border-bottom-shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="../Resources/MainLogo.svg"
-                    alt="Nordic Nook Cafe logo" />
+            <a class="navbar-brand" href="index.html"><img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
                 <span>Nordic Nook Café</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -65,11 +64,11 @@
     <main id="main-content">
         <!-- Quick-Actions-->
         <div class="quick-actions">
-            <a class="clickable" href="">
+            <a class="clickable" href="../HTML/Menu.html">
                 <img src="../Resources/Icon_Cup.svg" alt="Cup">Order</a>
-            <a class="clickable" href="">
+            <a class="clickable" href="../HTML/About&Sustainability.html">
                 <img src="../Resources/Icon_Leaf.svg" alt="Leaf">Sustainability</a>
-            <a class="clickable" href="">
+            <a class="clickable" href="#footer-info">
                 <img src="../Resources/Icon_Location.svg" alt="Location pin">Find Us</a>
         </div>
         <!--Hero Section-->
@@ -78,9 +77,9 @@
             <h1>Sustainable Scandinavian Comfort</h1>
             <p class="brand-text">Stockholm's cozy corner for ethically sourced coffee, tea, and pastries.</p>
             <nav class="hero-buttons">
-                <a class="hero-button clickable-darker invert-image-color" href=""><img
+                <a class="hero-button clickable-darker invert-image-color" href="../HTML/Menu.html"><img
                         src="../Resources/Icon_ToGoCup.svg" alt="To Go Cup">View Menu</a>
-                <a class="hero-button clickable-darker invert-image-color" href="">
+                <a class="hero-button clickable-darker invert-image-color" href="../HTML/Events.html">
                     <img src="../Resources/Icon_Calendar.svg" alt="Calendar">Events</a>
             </nav>
             <!--Brand Descriptions-->
@@ -103,9 +102,7 @@
         <section>
             <h2>Menu</h2>
             <div class="menu-section card-custom">
-                <article>
-                    <h3>Coffee</h3>
-                </article>
+                <h3>Coffee</h3>
                 <article>
                     <h4 class="split-text"><span>Espresso</span><span>35 kr</span></h4>
                 </article>
@@ -122,9 +119,7 @@
         </section>
         <section>
             <div class="menu-section card-custom">
-                <article>
-                    <h3>Tea</h3>
-                </article>
+                <h3>Tea</h3>
                 <article>
                     <h4 class="split-text"><span>Earl Grey</span><span>32 kr</span></h4>
                 </article>
@@ -138,9 +133,7 @@
         </section>
         <section>
             <div class="menu-section card-custom">
-                <article>
-                    <h3>Seasonal</h3>
-                </article>
+                <h3>Seasonal</h3>
                 <article>
                     <h4 class="split-text"><span>Cardamon Latte</span><span>52 kr</span></h4>
                 </article>
@@ -151,9 +144,7 @@
         </section>
         <section>
             <div class="menu-section card-custom">
-                <article>
-                    <h3>Pastries</h3>
-                </article>
+                <h3>Pastries</h3>
                 <article>
                     <h4 class="split-text"><span>Kanelbulle</span><span>28 kr</span></h4>
                 </article>
@@ -168,30 +159,57 @@
     </main>
 
     <footer>
-        <section class="footer-section">
+        <section class="footer-section" id="footer-info">
             <h4>Nordic Nook Café</h4>
             <p>Skånegatan 45, Stockholm</p>
-            <p>Mon-Fri 07:30-19:00 · Sat 08:00-18:00 · Sun 09:00-17:00</p>
+            <ul>
+                <li>
+                    <p>Mon-Fri 07:30-19:00</p>
+                </li>
+                <li>
+                    <p>Sat 08:00-18:00</p>
+                </li>
+                <li>
+                    <p>Sun 09:00-17:00</p>
+                </li>
+            </ul>
+
         </section>
         <section class="footer-section">
             <h4>Explore</h4>
-            <a href="../HTML/Menu.html">Menu</a>
-            <a href="../HTML/Events.html">Events</a>
-            <a href="../HTML/About&Sustainability.html">About</a>
+            <ul>
+                <li><a href="../HTML/Menu.html">Menu</a></li>
+                <li><a href="../HTML/Events.html">Events</a></li>
+                <li><a href="../HTML/About&Sustainability.html">About</a></li>
+            </ul>
         </section>
         <section class="footer-section">
             <h4>Help</h4>
-            <p>FAQ Contact</p>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                    <p>Contact</p>
+                </li>
+                <li>
+                    <p>Tel: 123 123 123</p>
+                </li>
+                <li id="regular-text-style">
+                    <span>Mail us at: </span><a href="mailto:name@email.com">fake@email.com</a>
+                </li>
+            </ul>
         </section>
         <section class="footer-section">
             <h4>Follow</h4>
-            <a href="https://www.instagram.com">Instagram</a>
-            <a href="https://www.facebook.com">Facebook</a>
+            <ul>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+            </ul>
         </section>
     </footer>
+
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
 
-<!--All kod validerad 09-26-2025-->
+<!--All kod validerad 2025-09-28-->

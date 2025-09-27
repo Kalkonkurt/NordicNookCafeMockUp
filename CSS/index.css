@@ -44,13 +44,9 @@ body {
     background-color: var(--background-color);
     padding: 0;
     margin: 0;
-
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 main {
     margin: 1rem 1rem 1.5rem 1rem;
-    /* max-width: 80%; */
 }
 
 .skip-link {
@@ -97,7 +93,7 @@ h3 {
     color: var(--foreground);
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 h4 {
@@ -197,7 +193,7 @@ p {
     width: 100%;
     background-color: #dbcfc1;
     background-repeat: no-repeat;
-    object-fit: cover;
+    object-fit: contain;
 }
 .brand-text {
     margin: 0 1rem 1rem 1rem;
@@ -233,7 +229,7 @@ a {
 }
 /*Brand Deescriptions*/
 article {
-    padding: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+    padding: 0.8125rem;
 }
 .article-card {
     background-color: var(--card);
@@ -248,17 +244,38 @@ article {
     padding-bottom: 0.5rem;
 }
 
+.menu-section h3 {
+    margin-left: 0.8125rem;
+}
 .split-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/*Footer*/
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     background-color: var(--navbar-background);
     padding: 1rem 0;
 }
 .footer-section {
     margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-section p {
+    color: var(--secondary-foreground);
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#regular-text-style {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--secondary-foreground);
 }
 /* Custom Styles */
 .card-custom {
@@ -276,12 +293,13 @@ footer {
     background-color: var(--hover-background);
     color: var(--hover-color);
 }
+/*Inverterar färg och ikon på quick actions*/
 .clickable-darker:hover {
     background-color: var(--hover-color);
     color: var(--input);
 }
-/*Inverterar färg och ikon på quick actions*/
+/*Inverterar färg och ikon på bilderna till quick actions*/
 .invert-image-color:hover img {
     filter: invert(1);
 }
-/*All kod validerad 09-26-2025*/
+/*All kod validerad 2025-09-28*/
