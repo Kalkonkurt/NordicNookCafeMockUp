@@ -14,53 +14,56 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to Main Content</a>
     <!--Navbar för desktop-->
-    <nav class="navbar-large border-bottom-shadow" aria-label="Desktop navigation" id="scroll-top">
-        <a id="main-logo" class="navbar-item" href="index.html">
-            <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
-            <span>Nordic Nook Café</span>
-        </a>
-        <a class="navbar-item clickable" href="../HTML/index.html">Home</a>
-        <a class="navbar-item clickable" href="../HTML/Menu.html">Menu</a>
-        <a class="navbar-item clickable" href="../HTML/Locations&Hours.html">Locations & Hours</a>
-        <a class="navbar-item clickable" href="../HTML/About&Sustainability.html">About & Sustainability</a>
-        <a class="navbar-item clickable" href="../HTML/Events.html">Events</a>
-    </nav>
-    <!-- Hamburgerbar för mobil från bootstrap-->
-    <nav class="navbar sticky-top border-bottom-shadow" aria-label="Mobile navigation">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
-                <span>Nordic Nook Café</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        Nordic Nook Café
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item clickable">
-                            <a class="nav-link active" aria-current="page" href="../HTML/index.html">Home</a>
-                        </li>
-                        <li class="nav-item clickable">
-                            <a class="nav-link" href="../HTML/Menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item clickable">
-                            <a class="nav-link" href="../HTML/Locations&Hours.html">Locations & Hours</a>
-                        </li>
-                        <li class="nav-item clickable">
-                            <a class="nav-link" href="../HTML/About&Sustainability.html">About & Sustainability</a>
-                        </li>
-                    </ul>
+    <header id="scroll-top">
+        <nav class="navbar-large border-bottom-shadow" aria-label="Desktop navigation">
+            <a id="main-logo" class="navbar-item" href="index.html">
+                <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
+                <span>Nordic Nook Café</span>
+            </a>
+            <a class="navbar-item clickable" href="../HTML/index.html">Home</a>
+            <a class="navbar-item clickable" href="../HTML/Menu.html">Menu</a>
+            <a class="navbar-item clickable" href="../HTML/Locations&Hours.html">Locations & Hours</a>
+            <a class="navbar-item clickable" href="../HTML/About&Sustainability.html">About & Sustainability</a>
+            <a class="navbar-item clickable" href="../HTML/Events.html">Events</a>
+        </nav>
+        <!-- Hamburgerbar för mobil från bootstrap-->
+        <nav class="navbar sticky-top border-bottom-shadow" aria-label="Mobile navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="../Resources/MainLogo.svg"
+                        alt="Nordic Nook Cafe logo">
+                    <span>Nordic Nook Café</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Nordic Nook Café
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item clickable">
+                                <a class="nav-link active" aria-current="page" href="../HTML/index.html">Home</a>
+                            </li>
+                            <li class="nav-item clickable">
+                                <a class="nav-link" href="../HTML/Menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item clickable">
+                                <a class="nav-link" href="../HTML/Locations&Hours.html">Locations & Hours</a>
+                            </li>
+                            <li class="nav-item clickable">
+                                <a class="nav-link" href="../HTML/About&Sustainability.html">About & Sustainability</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main id="main-content">
         <!-- Quick-Actions-->
         <div class="quick-actions">
@@ -84,7 +87,7 @@
             </nav>
             <!--Brand Descriptions-->
             <div class="card-custom">
-                <article class="article-card">
+                <article class="article-card ">
                     <h4>Ethical Sourcing</h4>
                     <p>Direct-trade beans, organic teas, and seasonal produce.</p>
                 </article>
@@ -98,66 +101,69 @@
                 </article>
             </div>
         </section>
-        <!--Menu-->
+        <!--Menu coffee-->
         <section>
             <h2>Menu</h2>
             <div class="menu-section card-custom">
                 <h3>Coffee</h3>
-                <article>
-                    <h4 class="split-text"><span>Espresso</span><span>35 kr</span></h4>
+                <article class="split-text">
+                    <h4>Espresso</h4><span>35 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Americano</span><span>38 kr</span></h4>
+                <article class="split-text">
+                    <h4>Americano</h4><span>38 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Cappuccino</span><span>45 kr</span></h4>
+                <article class="split-text">
+                    <h4>Cappuccino</h4><span>45 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Latte</span><span>48 kr</span></h4>
+                <article class="split-text">
+                    <h4>Latte</h4><span>48 kr</span>
                 </article>
             </div>
         </section>
+        <!--Menu tea-->
         <section>
             <div class="menu-section card-custom">
                 <h3>Tea</h3>
-                <article>
-                    <h4 class="split-text"><span>Earl Grey</span><span>32 kr</span></h4>
+                <article class="split-text">
+                    <h4>Earl Grey</h4><span>32 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Green Sencha</span><span>34 kr</span></h4>
+                <article class="split-text">
+                    <h4>Green Sencha</h4><span>34 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Herbal Lingonberry</span><span>36 kr</span></h4>
+                <article class="split-text">
+                    <h4>Herbal Lingonberry</h4><span>36 kr</span>
                 </article>
             </div>
         </section>
+        <!--Menu seasonal-->
         <section>
             <div class="menu-section card-custom">
                 <h3>Seasonal</h3>
-                <article>
-                    <h4 class="split-text"><span>Cardamon Latte</span><span>52 kr</span></h4>
+                <article class="split-text">
+                    <h4>Cardamon Latte</h4><span>52 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Cold Brew</span><span>50 kr</span></h4>
+                <article class="split-text">
+                    <h4>Cold Brew</h4><span>50 kr</span>
                 </article>
             </div>
         </section>
+        <!--Menu pastries-->
         <section>
             <div class="menu-section card-custom">
                 <h3>Pastries</h3>
-                <article>
-                    <h4 class="split-text"><span>Kanelbulle</span><span>28 kr</span></h4>
+                <article class="split-text">
+                    <h4>Kanelbulle</h4><span>28 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Cardamon Bun</span><span>28 kr</span></h4>
+                <article class="split-text">
+                    <h4>Cardamon Bun</h4><span>28 kr</span>
                 </article>
-                <article>
-                    <h4 class="split-text"><span>Almond Tart</span><span>34 kr</span></h4>
+                <article class="split-text">
+                    <h4>Almond Tart</h4><span>34 kr</span>
                 </article>
             </div>
         </section>
     </main>
-
+    <!--Footer-->
     <footer>
         <section class="footer-section" id="footer-info">
             <h4>Nordic Nook Café</h4>

@@ -27,6 +27,7 @@
     --large-roundness: 1.5rem;
     --very-large-roundness: 3rem;
 }
+/*Global*/
 @font-face {
     font-family: 'Inter';
     src: url('../Resources/Inter/Inter-VariableFont_opszwght.ttf')
@@ -46,6 +47,7 @@ body {
 main {
     margin: 1rem 1rem 1.5rem 1rem;
 }
+/*Accessebility*/
 .skip-link {
     position: absolute;
     padding: 0.5rem;
@@ -72,6 +74,7 @@ main {
     text-decoration: none;
     z-index: 10000;
 }
+/*Typography*/
 h1,
 h2,
 h3,
@@ -115,6 +118,7 @@ p {
     font-style: normal;
     font-weight: 400;
 }
+/*Logo*/
 #main-logo {
     display: flex;
     margin-right: auto;
@@ -125,7 +129,7 @@ p {
 #main-logo > span {
     padding-left: 20px;
 }
-/* Navbar */
+/* Navbar desktop*/
 .navbar-large {
     display: flex;
     flex-wrap: wrap;
@@ -147,6 +151,7 @@ p {
     margin: 0 0.5rem 0 0.5rem;
     padding: 0.5rem;
 }
+/*Navbar Mobile*/
 @media (max-width: 780px) {
     .navbar {
         display: flex;
@@ -228,23 +233,32 @@ a {
 }
 /*Brand Deescriptions*/
 article {
-    padding: 0.8125rem;
+    padding: 0.8125rem 0;
 }
 .article-card {
     margin: 1rem;
+    padding: 0.8125rem;
     box-sizing: border-box;
     border: 0.16rem solid var(--banner-color);
     border-radius: var(--medium-roundness);
     background-color: var(--card);
 }
 /*Menu*/
-.menu-section article > h4 {
+.menu-section article {
+    margin: 0 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.0625rem dashed var(--banner-color);
 }
 
 .menu-section h3 {
     margin-left: 0.8125rem;
+}
+.menu-section span {
+    color: var(--foreground);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: space-between;
 }
 .split-text {
     display: flex;
