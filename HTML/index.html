@@ -6,7 +6,7 @@
     <meta content="initial-scale=1, width=device-width" name="viewport">
     <meta name="description"
         content="Nordic Nook Café - A cozy Scandinavian café in Stockholm offering ethically sourced coffee, tea, and pastries in a warm, sustainable environment.">
-    <title>Nordic Nook</title>
+    <title>Nordic Nook Café</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
@@ -14,7 +14,7 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to Main Content</a>
     <!--Navbar för desktop-->
-    <nav class="navbar-large border-bottom-shadow">
+    <nav class="navbar-large border-bottom-shadow" aria-label="Desktop navigation" id="scroll-top">
         <a id="main-logo" class="navbar-item" href="index.html">
             <img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
             <span>Nordic Nook Café</span>
@@ -26,7 +26,7 @@
         <a class="navbar-item clickable" href="../HTML/Events.html">Events</a>
     </nav>
     <!-- Hamburgerbar för mobil från bootstrap-->
-    <nav class="navbar sticky-top border-bottom-shadow">
+    <nav class="navbar sticky-top border-bottom-shadow" aria-label="Mobile navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="../Resources/MainLogo.svg" alt="Nordic Nook Cafe logo">
                 <span>Nordic Nook Café</span></a>
@@ -65,9 +65,9 @@
         <!-- Quick-Actions-->
         <div class="quick-actions">
             <a class="clickable" href="../HTML/Menu.html">
-                <img src="../Resources/Icon_Cup.svg" alt="Cup">Order</a>
+                <img src="../Resources/Icon_Cup.svg" alt="decorative cup">Order</a>
             <a class="clickable" href="../HTML/About&Sustainability.html">
-                <img src="../Resources/Icon_Leaf.svg" alt="Leaf">Sustainability</a>
+                <img src="../Resources/Icon_Leaf.svg" alt="decorative leaf">Sustainability</a>
             <a class="clickable" href="#footer-info">
                 <img src="../Resources/Icon_Location.svg" alt="Location pin">Find Us</a>
         </div>
@@ -205,7 +205,7 @@
                 <li><a href="https://www.facebook.com">Facebook</a></li>
             </ul>
         </section>
-        <a class="skip-link bottom" href="#scroll-top">Scroll to top</a>
+        <a class="scroll-top bottom" href="#scroll-top">Scroll to top</a>
     </footer>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
